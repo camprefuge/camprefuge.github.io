@@ -17,6 +17,7 @@
 	<script src="./js/jquery-2.1.0.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery.touchSwipe.min.js" defer></script>
 	<script src="./js/lazysizes.min.js" defer></script>
     <title>Home</title>
 
@@ -41,11 +42,11 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bloc-fill-screen bg-forrest d-bloc bgc-black b-parallax " id="bloc-0">
+<div class="bloc bloc-fill-screen bg-forrest d-bloc bgc-black b-parallax" id="bloc-0">
 	<div class="container fill-bloc-top-edge">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Company</a>
+				<a class="navbar-brand" href="index.html"><img src="img/lazyload-ph.png" data-src="img/Camp%20Refuge_logo_small.jpg" alt="logo" width="150" height="150" class="lazyload" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -53,13 +54,26 @@
 			<div class="collapse navbar-collapse navbar-1 nav-special sidebar-nav">
 				<ul class="site-navigation nav navbar-nav pull-right">
 					<li>
-						<a href="#2" id="pl-undefined">Explore</a>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Explore<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#vision">Vision</a>
+								</li>
+								<li>
+									<a href="#leadership">Leadership</a>
+								</li>
+								<li>
+									<a href="#project-status">Project Status</a>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li>
-						<a href="#3" id="pl-undefined">Volunteer</a>
+						<a href="#volunteer" id="pl-undefined">Volunteer</a>
 					</li>
 					<li>
-						<a href="#4" id="pl-undefined">Donate</a>
+						<a href="#donate" id="pl-undefined">Donate</a>
 					</li>
 				</ul>
 			</div>
@@ -68,14 +82,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center mountain-hero-text animated fadeInUp ">
+				<h1 class="text-center mountain-hero-text fadeInUp  animated">
 					Camp Refuge
 				</h1>
-				<h3 class="text-center mg-lg mountain-hero-text-sub animated fadeInUp animDelay06, .animDelay04-hvr tc-white">
+				<h3 class="text-center mg-lg mountain-hero-text-sub fadeInUp animDelay06, .animDelay04-hvr tc-white animated">
 					Miraculous Transformations of Relationships
 				</h3>
 				<div class="text-center">
-					<a href="index.html" class="btn-wire btn btn-xl animated fadeIn animDelay1">Get Started</a>
+					<a href="http://eepurl.com/c7wxa1" class="btn-wire btn btn-xl fadeIn animDelay1 animated" target="_blank">Stay Informed<br></a>
 				</div>
 			</div>
 		</div>
@@ -112,7 +126,7 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="mg-md text-center tc-white ">
+				<h2 class="mg-md text-center tc-white " id="explore">
 					Explore<br>
 				</h2>
 			</div>
@@ -126,7 +140,7 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="mg-md">
+				<h2 class="mg-md" id="vision">
 					Master Plan
 				</h2><img src="img/lazyload-ph.png" data-src="img/1-Labeled%20Master%20Plan%20Only.jpg" class="img-responsive lazyload" />
 			</div>
@@ -196,13 +210,89 @@
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
-<div class="bloc bgc-white bg-forrest d-bloc b-parallax" id="bloc-7">
+<div class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="mg-md text-center  tc-white">
-					Volunteer<br>
+				<h2 class="text-center mg-md" id="leadership">
+					Leadership
 				</h2>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="img/placeholder-image.png" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="img/placeholder-image-sq.png" class="img-circle img-responsive lazyload" /></a>
+				<h3 class="text-center mg-md">
+					Title goes here
+				</h3>
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -214,8 +304,8 @@
 	<div class="container bloc-md">
 		<div class="row">
 			<div class="col-sm-10">
-				<h3 class="mg-md blocs-mobile-signup-text">
-					Sign Up
+				<h3 class="mg-md blocs-mobile-signup-text" id="project-status">
+					Project Status
 				</h3>
 			</div>
 			<div class="col-sm-2">
@@ -229,7 +319,40 @@
 <!-- bloc-8 END -->
 
 <!-- bloc-9 -->
-<div class="bloc bgc-white l-bloc" id="bloc-9">
+<div class="bloc bgc-white bg-forrest d-bloc b-parallax" id="bloc-9">
+	<div class="container bloc-lg">
+		<div class="row" id="volunteer">
+			<div class="col-sm-12">
+				<h2 class="mg-md text-center  tc-white">
+					Volunteer<br>
+				</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-9 END -->
+
+<!-- bloc-10 -->
+<div class="bloc bgc-white l-bloc" id="bloc-10">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-10">
+				<h3 class="mg-md blocs-mobile-signup-text">
+					Sign Up
+				</h3>
+			</div>
+			<div class="col-sm-2">
+				<div class="text-center">
+					<a href="www.google.com" class="btn btn-d btn-lg" target="_blank">Subscribe</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-10 END -->
+
+<!-- bloc-11 -->
+<div class="bloc bgc-white l-bloc" id="bloc-11">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-4">
@@ -262,27 +385,27 @@
 		</div>
 	</div>
 </div>
-<!-- bloc-9 END -->
+<!-- bloc-11 END -->
 
-<!-- bloc-10 -->
-<div class="bloc bloc-fill-screen bg-forrest d-bloc bgc-black b-parallax" id="bloc-10">
+<!-- bloc-12 -->
+<div class="bloc bloc-fill-screen bg-forrest d-bloc bgc-black b-parallax" id="bloc-12">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center mountain-hero-text animated fadeInUp">
+				<h1 class="text-center mountain-hero-text fadeInUp animated" id="donate">
 					It's all about the big hero strapline.
 				</h1>
-				<h3 class="text-center mg-lg mountain-hero-text-sub animated fadeInUp animDelay06, .animDelay04-hvr">
+				<h3 class="text-center mg-lg mountain-hero-text-sub fadeInUp animDelay06, .animDelay04-hvr animated">
 					But don't forget about your jazzy tag line.
 				</h3>
 				<div class="text-center">
-					<a href="index.html" class="btn-wire btn btn-xl animated fadeIn animDelay1">Donate</a>
+					<a href="www.paypal.me/camprefuge" class="btn-wire btn btn-xl fadeIn animDelay1 animated " target="_blank">Donate</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-10 END -->
+<!-- bloc-12 END -->
 
 <!-- ScrollToTop Button -->
 <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
