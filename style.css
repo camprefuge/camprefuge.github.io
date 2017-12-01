@@ -627,6 +627,10 @@ button{
 .text-center .a-block{
 	text-align:center;
 }
+.dropdown a .caret{
+	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
+	padding: 3px 20px;
+}
 
 /* = Icons
 -------------------------------------------------------------- */
@@ -876,14 +880,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	text-align:center;
 }
 .header-3-typ{
-	font-family:"Raleway";
+	font-family:"Spectral SC";
 }
 .paragraph-typ{
 	font-family:"Raleway";
 }
 .buffer-typ{
 	margin-bottom:0px;
-	margin-top:61px;
+	margin-top:39px;
 }
 .camp-refuge-is h2{
 	font-family:"Spectral SC";
@@ -920,15 +924,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bgc-white{
 	background-color:#ffffff;
 }
+.bgc-olive-drab-7{
+	background-color:#333333;
+}
 .bgc-black{
 	background-color:#000000;
 }
 
 /* Text colour styles */
 
-.tc-black{
-	color:#000000!important;
-}
 .tc-white{
 	color:#ffffff!important;
 }
@@ -943,12 +947,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-Soilinmalehands{
 	background-image:url("img/Soilinmalehands.jpg");
-}
-.bg-Banner-20Web-20Cypress-20Boardwalk{
-	background-image:url("img/Banner%20Web%20Cypress%20Boardwalk.jpg");
-}
-.bg-Retreat-20Centre-20Perspective-20B-26W-web{
-	background-image:url("img/Retreat%20Centre%20Perspective%20B%26W-web.jpg");
 }
 
 
