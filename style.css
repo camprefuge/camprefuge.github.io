@@ -574,6 +574,55 @@ nav .caret{
 	transform: translateY(0);
 }
 
+/* Side Bar Navigation */
+.sidebar-nav{
+	position: fixed;
+	right: -300px;
+	top: 0;
+	bottom: 0;
+	width: 300px;
+	z-index: 1000;
+	transition: all .2s linear;
+}
+.nav-invert .sidebar-nav{
+	right: auto;
+	left: -300px;
+}
+ .sidebar-nav .nav > li a{
+	color:rgba(255,255,255,.8);
+}
+ .sidebar-nav .nav > li a:hover{
+	color:#FFF;
+}
+ .open.sidebar-nav{
+	right: 0;
+	transition: all .2s linear;
+}
+.nav-invert .open.sidebar-nav{
+	left: 0;
+	transition: all .2s linear;
+}
+
+/* Content Tint */
+.content-tint{
+	z-index: -1;
+	transition: background .2s linear;
+}
+.content-tint.on{
+	display: block;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: transparent;
+	z-index: 1001;
+	background:rgba(0,0,0,.4);
+}
+.content-tint.on:hover{
+	background:rgba(0,0,0,.1);
+}
+
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
@@ -748,6 +797,83 @@ button{
 	font-size: 14px;
 	opacity: 1;
 }
+/* = Lightbox
+-------------------------------------------------------------- */
+
+a[data-lightbox]{
+	position: relative;
+	display: block;
+	text-align: center;
+}
+a[data-lightbox]:hover::before{
+	content:"+";
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+	font-size:32px;
+	width:50px;
+	height:50px;
+	margin-left:-25px;
+	border-radius: 50%;
+	background:rgba(0,0,0,.6);
+	color:#FFF;
+	font-weight:100;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+a[data-lightbox]:hover img{
+	opacity: 0.6;
+	-webkit-animation-fill-mode: none;
+	animation-fill-mode:none;
+}
+#lightbox-modal{
+	display: flex;
+	align-items: center;
+}
+#lightbox-modal .modal-dialog{
+	width:90%;
+	max-width:900px;
+	margin:0 auto 0;
+}
+#lightbox-modal .modal-dialog img{
+	max-height:90vh;
+	margin: 0 auto;
+}
+.lightbox-caption{
+	padding: 20px;
+	color: #FFF;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 5px;
+}
+.close-lightbox{
+	display: none;
+	font-size: 40px;
+	position: absolute;
+	top:8px;
+	right:20px;
+	z-index: 20;
+}
+.next-lightbox, .prev-lightbox{
+	font-size:20px;
+	color:rgba(255,255,255,.4);
+	transition: all .2s ease-in-out;
+	position: absolute;
+	top:50%;
+	z-index:1;
+}
+.next-lightbox{
+	right:25px;
+}
+.prev-lightbox{
+	left:25px;
+}
+.prev-lightbox:hover, .next-lightbox:hover{
+	color:rgba(255,255,255,.9);
+}
 
 /* = Custom Styling
 -------------------------------------------------------------- */
@@ -897,6 +1023,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .button-typ{
 	font-family:"Spectral SC";
+	background-color:#666666;
 }
 .button-header-2{
 	font-family:"Spectral SC";
@@ -914,6 +1041,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .background{
 	background-color:#333333;
+}
+.buffer-less{
+	margin-top:26px;
+}
+.camp-refuge-is a{
+	font-family:"Raleway";
 }
 
 /* = Colour
@@ -1141,6 +1274,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .heading-row a{
 	font-size:30px;
 }
+.button-typ{
+	background-color:#666666;
+	font-family:"Spectral SC";
+}
  }
 /* Drop Down Navigation */
 @media (min-width: 767px) and (max-width: 991px){
@@ -1192,7 +1329,23 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .vision-middle-set{
 	padding-top:0px;
 }
- 
+.blocs-mob-center-text{
+	text-align:center;
+}
+.button-typ{
+	background-color:#666666;
+	font-family:"Spectral SC";
+}
+ .sidebar-nav{
+	width:230px;
+}
+.nav-special.sidebar-nav .nav > li{
+	width:80%;
+}
+.nav-invert .sidebar-nav .close-special-menu{
+	left:200px;
+}
+
 /* Mobile Row Margin Offsets */
 .voffset-md-xs{
 	margin-top:50px;
