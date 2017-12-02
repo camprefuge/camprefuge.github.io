@@ -131,22 +131,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
-/* Background Textures */
-
-.bloc-bg-texture::before{
-	content:"";
-	background-size: 2px 2px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left:0;
-	right:0;
-}
-.texture-darken::before{
-	background: rgba(0,0,0,0.5);
-}
-
-
 /* Background Effects */
 
 .b-parallax{
@@ -1073,6 +1057,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bgc-olive-drab-7{
 	background-color:#333333;
 }
+.bgc-light-gray{
+	background-color:#D5D5D5;
+}
 .bgc-black{
 	background-color:#000000;
 }
@@ -1084,9 +1071,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-Soilinmalehands{
 	background-image:url("img/Soilinmalehands.jpg");
-}
-.bg-Statement-20of-20Beliefs-web{
-	background-image:url("img/Statement%20of%20Beliefs-web.jpg");
 }
 
 
