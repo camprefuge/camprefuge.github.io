@@ -131,6 +131,22 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
+/* Background Textures */
+
+.bloc-bg-texture::before{
+	content:"";
+	background-size: 2px 2px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+}
+.texture-darken::before{
+	background: rgba(0,0,0,0.5);
+}
+
+
 /* Background Effects */
 
 .b-parallax{
@@ -706,9 +722,6 @@ button{
 
 /* = Text & Icon Styles
 -------------------------------------------------------------- */
-.lg-shadow{
-	text-shadow:0 2px 5px rgba(0,0,0,.5);
-}
 .threeD-t{
 	text-shadow:0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25),0 20px 20px rgba(0,0,0,.15);
 }
@@ -1036,8 +1049,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .heading-row a{
 	font-family:"Spectral SC";
 	text-align:center;
-	font-size:44px;
 	display:;
+	font-size:40px;
 }
 .background{
 	background-color:#333333;
@@ -1064,22 +1077,16 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background-color:#000000;
 }
 
-/* Text colour styles */
-
-.tc-white{
-	color:#ffffff!important;
-}
-
 /* Bloc image backgrounds */
 
 .bg-Boardwalk{
 	background-image:url("img/Boardwalk.png");
 }
-.bg-FarmerWalkingThroughFieldCheckingWheatCrop{
-	background-image:url("img/FarmerWalkingThroughFieldCheckingWheatCrop.jpg");
-}
 .bg-Soilinmalehands{
 	background-image:url("img/Soilinmalehands.jpg");
+}
+.bg-Statement-20of-20Beliefs-web{
+	background-image:url("img/Statement%20of%20Beliefs-web.jpg");
 }
 
 
@@ -1277,6 +1284,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .button-typ{
 	background-color:#666666;
 	font-family:"Spectral SC";
+}
+.buffer-ipad-only{
+	margin-top:106px;
 }
  }
 /* Drop Down Navigation */
