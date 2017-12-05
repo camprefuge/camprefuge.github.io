@@ -1045,6 +1045,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .camp-refuge-is a{
 	font-family:"Raleway";
 }
+.buffer-least{
+	margin-top:12px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -1343,6 +1346,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* Mobile Row Margin Offsets */
 .voffset-md-xs{
 	margin-top:50px;
+}
+/* = Text Mobile Alignment Classes
+-------------------------------------------------------------- */
+.text-center-xs{
+	text-align:center;
 }
 }
 
