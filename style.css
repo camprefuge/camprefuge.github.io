@@ -55,6 +55,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-top:0;
 	position: relative;
 	height: inherit;
+	min-height:100vh;
 }
 .bloc-fill-screen > .container{
 	position:relative;
@@ -109,6 +110,10 @@ a:hover{text-decoration: none; cursor:pointer;}
 .full-width-bloc .carousel img{
 	width:100%;
 	height:auto;
+}
+.full-width-bloc .navbar{
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 
@@ -355,10 +360,6 @@ nav .caret{
 	border-bottom-color:transparent;
 	margin: 6px -5px 0 0!important;
 	float: right;
-}
-.hero .hero-nav{
-	padding-left:inherit;
-	padding-right:inherit;
 }
 
 /* Force Mini Menu */
@@ -665,6 +666,10 @@ button{
 	outline: none!important;
 }
 
+.btn-xl{
+	padding: 16px 40px;
+	font-size: 28px;
+}
 .a-btn{
 	padding: 6px 10px 6px 0;
 	line-height: 1.42857143;
@@ -851,29 +856,39 @@ a[data-lightbox]:hover img{
 	bottom: 5px;
 }
 .close-lightbox{
-	display: none;
-	font-size: 40px;
+	color:#FFF;
+	font-size: 30px;
 	position: absolute;
-	top:8px;
+	top:20px;
 	right:20px;
 	z-index: 20;
+	background:rgba(0,0,0,.5);
+	border:none;
+	line-height: 30px;
+	padding:0 9px 5px;
+	opacity: 0.3;
+}
+.close-lightbox:hover,.next-lightbox:hover, .prev-lightbox:hover{
+	opacity: 1.0;
+	color:#FFF;
 }
 .next-lightbox, .prev-lightbox{
 	font-size:20px;
-	color:rgba(255,255,255,.4);
+	color:rgba(255,255,255,.9);
+	background:rgba(0,0,0,.5);
 	transition: all .2s ease-in-out;
 	position: absolute;
-	top:50%;
+	top:45%;
 	z-index:1;
+	opacity: 0.4;
 }
 .next-lightbox{
+	padding:6px 8px 1px 13px;
 	right:25px;
 }
 .prev-lightbox{
+	padding:6px 13px 1px 10px;
 	left:25px;
-}
-.prev-lightbox:hover, .next-lightbox:hover{
-	color:rgba(255,255,255,.9);
 }
 
 /* = Custom Styling
@@ -1082,6 +1097,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 
 
+
 /* = Mobile adjustments 
 -------------------------------------------------------------- */
 @media (max-width: 1024px)
@@ -1110,8 +1126,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     .container{width:100%;}
     .b-parallax{background-attachment:scroll;}
     .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */
+    .bloc{padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);} /* iPhone X Notch Support*/
     .bloc-group, .bloc-group .bloc{display:block;width:100%;}
-    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{padding-left: 10px;padding-right: 10px;}
+    .bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{padding:0 20px;padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);}
 }
 @media (max-width: 767px)
 {
@@ -1122,15 +1139,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     h1,h2,h3,h4,h5,h6,p,#disqus_thread{
         padding-left:10px!important; 
         padding-right:10px!important; 
-    }
-    #hero-bloc h1{
-        font-size:40px;
-    }
-    #hero-bloc h2{
-        font-size:34px;
-    }
-    #hero-bloc h3{
-        font-size:25px;
     }
     .b-parallax{
         background-attachment:scroll;
@@ -1199,6 +1207,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     }
     .nav-invert .navbar-toggle{
         float:left; 
+        margin-left:10px;
     }
     .bloc{
         padding-left: 0; 
@@ -1211,7 +1220,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
         padding-left: 0; 
         padding-right: 0;
     }
-    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container, .bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{
         padding-left:0;padding-right:0;
     }
     .a-block{
@@ -1254,11 +1263,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 {    
     .bloc{
         padding-left: 0; 
-        padding-right: 0;  
-        -webkit-background-size: auto 200%;
-        -moz-background-size: auto 200%;
-        -o-background-size: auto 200%;
-        background-size: auto 200%;
+        padding-right: 0;
     }
 }
 
