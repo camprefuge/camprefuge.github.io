@@ -254,6 +254,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin: 0 5px 0 0;
 	display:inline;
 }
+.navbar-brand img[src$=svg]{
+	min-width:100px;
+}
 .nav-center .navbar-brand img{
 	margin:0;
 }
@@ -491,6 +494,9 @@ nav .caret{
 	border-left-color: transparent;
 	margin: 0 0 0 5px;
 	float: none;
+}
+.blocsapp-special-menu .site-navigation.pull-right{
+	float:none!important;
 }
 
 /* Nav Special Close Button */
@@ -1121,6 +1127,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {.b-parallax{background-attachment:scroll;}}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {.b-parallax{background-attachment:scroll;}}
 @media (max-width: 991px)
 {
     .container{width:100%;}
