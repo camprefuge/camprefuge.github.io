@@ -54,8 +54,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc-fill-screen{
 	padding-top:0;
 	position: relative;
-	height: inherit;
-	min-height:100vh;
+	height:100vh;
 }
 .bloc-fill-screen > .container{
 	position:relative;
