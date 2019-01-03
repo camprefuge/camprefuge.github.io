@@ -697,6 +697,9 @@ button{
 
 /* = Icons
 -------------------------------------------------------------- */
+.icon-sm{
+	font-size:18px!important;
+}
 .icon-lg{
 	font-size:60px!important;
 }
@@ -1344,6 +1347,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .button-typ{
 	background-color:#666666;
 	font-family:"Spectral SC";
+}
+.blocs-team-avatar{
+	max-width:280px;
+}
+.blocs-team-header{
+	text-align:center;
+}
+.blocs-team-details{
+	text-align:center;
+}
+.blocs-team-first-social{
+	margin-left:41%;
 }
  .sidebar-nav{
 	width:230px;
