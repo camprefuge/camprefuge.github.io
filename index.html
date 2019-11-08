@@ -11,11 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/linecons.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/ionicons.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Spectral+SC&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     
 	<script src="./js/jquery-2.1.0.min.js"></script>
@@ -46,35 +43,22 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc" id="bloc-0">
+<div class="bloc l-bloc bgc-white" id="bloc-0">
 	<div class="container bloc-sm">
 		<nav class="navbar row mini-nav">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><br></a>
+				<a class="navbar-brand" href="index.html"><span class="special-tag-for-editing-text-with-html"></span><img src="img/Camp%20Refuge_logo_%20font_background.jpg" alt="logo" width="100" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle menu-icon-two-bars-thick" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="navbar-collapse navbar-1 collapse nav-special sidebar-nav">
+			<div class="collapse navbar-collapse navbar-1 nav-special sidebar-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Home</a>
 					</li>
 					<li>
-						<div class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Vision<span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li>
-									<a href="index.html#vision">Vision</a>
-								</li>
-								<li>
-									<a href="index.html#master-plan">Master Plan</a>
-								</li>
-								<li>
-									<a href="index.html#offerings">Offerings</a>
-								</li>
-							</ul>
-						</div>
+						<a href="index.html#events" id="pl-undefined">Events</a>
 					</li>
 					<li>
 						<div class="dropdown">
@@ -90,10 +74,23 @@
 						</div>
 					</li>
 					<li>
-						<a href="index.html#events" id="pl-undefined">Events</a>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Vision<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="index.html#vision">Future Vision</a>
+								</li>
+								<li>
+									<a href="index.html#master-plan">Master Plan</a>
+								</li>
+								<li>
+									<a href="index.html#offerings">Future Offerings</a>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li>
-						<a href="index.html#founder-s-story" id="pl-undefined">Founder's Story</a>
+						<a href="index.html#history" id="pl-undefined">Founder's Story</a>
 					</li>
 					<li>
 						<a href="#contact-us" id="pl-undefined">Contact Us</a>
@@ -111,39 +108,31 @@
 <!-- bloc-1 -->
 <div class="bloc homepage-log-block-buffer none bgc-olive-drab-7 d-bloc" id="bloc-1">
 	<div class="container bloc-md">
-		<div class="row">
+		<div class="row ">
 			<div class="col-sm-12">
 				<img src="img/lazyload-ph.png" data-src="img/Camp%20Refuge_logo_%20font_background.jpg" class="img-responsive logo-homepage center-block d lazyload" />
-			</div>
-		</div>
-		<div class="row heading-row voffset">
-			<div class="col-sm-3">
-				<h2 class="mg-md vision-middle-set">
-					<div class="text-center">
-						<a href="#vision" class="bounce-hvr animated">Vision</a>
-					</div><br>
-				</h2>
-			</div>
-			<div class="col-sm-3">
-				<h2 class="mg-md">
-					<div class="text-center">
-						<a href="#get-involved">Get Involved</a>
-					</div><br>
-				</h2>
-			</div>
-			<div class="col-sm-3">
-				<h2 class="mg-md vision-middle-set">
-					<div class="text-center">
-						<a href="#events">Events</a>
-					</div><br>
-				</h2>
-			</div>
-			<div class="col-sm-3">
-				<h2 class="mg-md">
-					<div class="text-center">
-						<a href="#founder-s-story">Founder&rsquo;s Story</a>
-					</div><br>
-				</h2>
+				<div class="row heading-row buffer-less">
+					<div class="col-sm-3">
+						<h2 class="mg-md">
+							<a href="#events">Events</a><br>
+						</h2>
+					</div>
+					<div class="col-sm-3">
+						<h2 class="mg-md">
+							<a href="#get-involved">Support</a><br>
+						</h2>
+					</div>
+					<div class="col-sm-3">
+						<h2 class="mg-md">
+							<a href="#vision">Vision</a><br>
+						</h2>
+					</div>
+					<div class="col-sm-3">
+						<h2 class="mg-md">
+							<a href="#history">Story&nbsp;</a><br>
+						</h2>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -151,47 +140,19 @@
 <!-- bloc-1 END -->
 
 <!-- bloc-2 -->
-<div class="bloc bgc-white none" id="bloc-2">
+<div class="bloc bgc-white l-bloc" id="bloc-2">
 	<div class="container bloc-lg">
-		<div class="row camp-refuge-is animSpeedLazy none">
-			<div class="col-sm-4">
+		<div class="row camp-refuge-is">
+			<div class="col-sm-12">
 				<div class="panel">
 					<div class="panel-heading">
 						<h3 class="mg-clear">
-							Camp Refuge is...
+							Welcome...
 						</h3>
 					</div>
 					<div class="panel-body">
 						<p>
-							A Christ-centered sanctuary and retreat&nbsp;center planned to be located in the heart of Lafayette, Louisiana. &nbsp;Our desire is to foster an environment that allows for deeper connections without the distractions of everyday life.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="panel">
-					<div class="panel-heading">
-						<h3 class="mg-clear">
-							Camp Refuge is...
-						</h3>
-					</div>
-					<div class="panel-body">
-						<p>
-							Holy Spirit driven. We believe that all lasting change comes from the inner workings of the Holy Spirit. Without Him, our work and striving are fruitless. We desire to create an environment that allows the Holy Spirit to move freely. A place where married couples can let their guard down and invest in each other. A place where parents and their teen can genuinely connect without distractions. A place where youth can have an intimate encounter with the Father.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="panel">
-					<div class="panel-heading">
-						<h3 class="mg-clear">
-							Camp Refuge is...
-						</h3>
-					</div>
-					<div class="panel-body">
-						<p>
-							A resource for all seasons of life. We seek to not only provide a safe haven, but also equip individuals with the tools to reconcile, strengthen, and establish relationships. &nbsp;
+							Thank you for your interest in Camp Refuge! The vision of Camp Refuge was birthed over 2 years ago with the desire to see true connection happen in relationships...to see walls come down and deeper bonds to be formed. Since then, we have hosted five Rustic Romance marriage retreats and we are excited to announce the inclusion of a new retreat, Firm Foundations, in the Spring of 2020. It is designed specifically for engaged or serious dating couples who are seeking/considering marriage. <br><br>Our heart is to foster healthier, stronger relationships. Camp Refuge isn&rsquo;t for one type of couple. It&rsquo;s not just for the struggling or just for the strong. It&rsquo;s for all seasons. We believe that by providing a safe, distraction-free environment, true vulnerability can occur. <br><br>Camp Refuge truly is “a safe haven in all seasons of life.” Let us build you up and strengthen your most important earthly relationship. You will never regret investing in your relationship.<br><br>-Kevin and Nicole Stewart, Founders of Camp Refuge <br><br>Matthew 11:28–29 (ESV): Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls.<br>
 						</p>
 					</div>
 				</div>
@@ -201,167 +162,116 @@
 </div>
 <!-- bloc-2 END -->
 
-<!-- vision -->
-<div class="bloc bgc-olive-drab-7 d-bloc" id="vision">
+<!-- bloc-3 -->
+<div class="bloc bgc-white none tc-olive-drab-7" id="bloc-3">
+	<div class="video-bg-container">
+		<video class="bloc-video lazyload" preload="auto" loop="loop" muted="true" playsinline="true" autoplay="autoplay" data-src="vid/Website%20Background%20Med%20Quality%20Med%20Res.mp4">
+			
+		</video>
+	</div>
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-3 END -->
+
+<!-- events -->
+<div class="bloc bgc-olive-drab-7 d-bloc" id="events">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="mg-md header-2-typ">
-					Vision
+					Events
 				</h2>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- vision END -->
+<!-- events END -->
 
-<!-- bloc-4 -->
-<div class="bloc bgc-white l-bloc" id="bloc-4">
+<!-- bloc-5 -->
+<div class="bloc camp-refuge-is bgc-light-gray l-bloc none" id="bloc-5">
 	<div class="container bloc-lg">
-		<div class="row camp-refuge-is">
-			<div class="col-sm-4">
-				<a href="#" data-lightbox="img/Chapel%20Sketch-web.jpg" data-gallery-id="gallery-1" data-frame="light-lb"><img src="img/lazyload-ph.png" data-src="img/Chapel%20Sketch-web.jpg" class="img-responsive lazyload" /></a>
-				<h3 class="mg-md">
-					pondside Chapel
-				</h3>
-				<p>
-					Our Pondside Chapel is symbolic of the Old Testament&rsquo;s Holy of Holies. The walls of glass on three sides represent the veil that was torn granting us free access to the Father. This space is meant for personal reflection, prayer, and intimate gatherings. “And so, dear brothers and sisters, we can boldly enter heaven&rsquo;s Most Holy Place because of the blood of Jesus. By his death, Jesus opened a new and life-giving way through the curtain into the Most Holy Place.” (Hebrews 10:19-20)
-				</p>
+		<div class="row">
+			<div class="col-sm-6 col-sm-push-6">
+				<img src="img/lazyload-ph.png" data-src="img/Firm%20Foundations%20Knot.png" class="img-responsive buffer-typ lazyload" />
 			</div>
-			<div class="col-sm-4">
-				<a href="#" data-lightbox="img/Retreat%20Centre%20Perspective%20B%26W-web.jpg" data-gallery-id="gallery-1" data-frame="light-lb"><img src="img/lazyload-ph.png" data-src="img/Retreat%20Centre%20Perspective%20B%26W-web.jpg" class="img-responsive lazyload" /></a>
-				<h3 class="mg-md text-center">
-					The Gathering
+			<div class="col-sm-6 col-sm-pull-6">
+				<h2 class="mg-lg">
+					Premarital Retreat
+				</h2>
+				<h3 class="mg-sm">
+					March 20-22, 2020
 				</h3>
-				<p class="text-center">
-					The Gathering at Camp Refuge is our main assembly building. Each day our retreats will start and end here. It is a multipurpose building that will not only host our times of worship and daily teachings, but also will also serve as our dining facility. There is also a screened-in-porch to enjoy a cup of coffee or a light lunch while taking in the peaceful surroundings.
+				<p class="mg-lg">
+					Looking for a great way to start a life-long relationship? Our Firm Foundations retreat offers engaged couples - or those seriously dating - a weekend to invest in your future marriage. Spend a weekend unplugged from the busyness of life and discover God&rsquo;s plan for your closest relationship. You will experience romantic dining, couples team building, coaching sessions, worship, a bonfire and more without the distractions of everyday responsibilities. To get the most out of this weekend, phones and other electronic devices should be left behind or turned off. Space is limited, so signup today!
 				</p>
+				<div class="text-center">
+					<a href="firm-foundations.html" class="btn btn-d btn-lg button-typ" target="_blank">More Info</a>
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<a href="#" data-lightbox="img/Treehouse%20Boardwalk-web-mirrored.jpg" data-gallery-id="gallery-1" data-frame="light-lb"><img src="img/lazyload-ph.png" data-src="img/Treehouse%20Boardwalk-web-mirrored.jpg" class="img-responsive lazyload" /></a>
-				<h3 class="mg-md text-right">
-					treehouse cottages
+		</div>
+		<div class="row voffset-md">
+			<div class="col-sm-6">
+				<img src="img/lazyload-ph.png" data-src="img/RusticRomance%202-1.jpg" class="img-responsive buffer-typ lazyload" />
+			</div>
+			<div class="col-sm-6">
+				<h2 class="mg-lg">
+					Husband/Wife Retreat
+				</h2>
+				<h3 class="mg-sm">
+					March 27-29, 2020
 				</h3>
-				<p class="text-right">
-					Surrounding the pond there will be 12 treehouse cottages that are symbolic of the 12 tribes of Israel. &nbsp;The treehouse cabins serve as sleeping accomodations for our married couples' and pastors&rsquo; retreats. &nbsp; Each cabin is unique and is decorated according to the tribe it represents. &nbsp;The cabin features a queen sized bed, &nbsp;an intimate dining table, a full bathroom and a porch with its own swing and rocker.<br>
+				<p class="mg-lg">
+					Rustic outdoors meets airy romance in this weekend retreat focused on building closer relationships between husbands and wives. It&rsquo;s glamping at its finest with gourmet meals, bonfires, and times of intimate conversation without the distractions of everyday responsibilities. Topics include communication, the art of grace, and couple&rsquo;s teambuilding. To get the most out of this weekend, phones and other electronic devices should be left behind or turned off. Space is limited, so sign up today!
 				</p>
+				<div class="text-center">
+					<a href="rustic-romance.html" class="btn btn-d btn-lg button-typ">More Info</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-4 END -->
-
-<!-- master-plan -->
-<div class="bloc bgc-white l-bloc" id="master-plan">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md header-3-typ text-center">
-					Proposed Master Plan
-				</h3><img src="img/lazyload-ph.png" data-src="img/Labeled%20Master%20Plan-no%20key.jpg" class="img-responsive lazyload" />
-			</div>
-		</div>
-		<div class="row camp-refuge-is">
-			<div class="col-sm-4">
-				<h3 class="mg-md text-center">
-					Assembly
-				</h3>
-				<p class="text-left">
-					A - The Gathering <br>B - Pondside Chapel <br>C - Outdoor Amphitheater <br>D - Cooking Pavilion
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<h3 class="mg-md text-center">
-					Accomodation
-				</h3>
-				<p>
-					E - Treehouse Cottages <br>F - Men&rsquo;s Dormitory <br>G - Women&rsquo;s Dormitory <br>H - Bath House
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<h3 class="mg-md text-center">
-					Adventure <br>
-				</h3>
-				<p>
-					I - Riverside Boat Launch <br>J - Splash Pad <br>K - Odyssey High Ropes <br>L - Low Ropes Course
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- master-plan END -->
-
-<!-- offerings -->
-<div class="bloc bgc-white camp-refuge-is l-bloc" id="offerings">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3 class="mg-md header-3-typ text-center">
-					Future Camp Refuge Offerings
-				</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<img src="img/lazyload-ph.png" data-src="img/parent%20teen-web.jpg" class="img-circle img-responsive lazyload" />
-				<h3 class="text-center mg-md">
-					Parent/ Teen Retreat<br>
-				</h3>
-				<p class="text-center">
-					The teen years are a difficult time to genuinely connect for parents and their child. This retreat seeks to create a safe place for open and honest communication while building trust in the relationship.
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<img src="img/lazyload-ph.png" data-src="img/youthcamp-web.jpg" class="img-circle img-responsive lazyload" />
-				<h3 class="text-center mg-md">
-					Youth Camp
-				</h3>
-				<p class="text-center">
-					The heart behind this retreat is to establish a strong connection between youth and their Heavenly Father.&nbsp;
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<img src="img/lazyload-ph.png" data-src="img/coupleretreat-web.jpg" class="img-circle img-responsive lazyload" />
-				<h3 class="text-center mg-md">
-					Husband/ Wife Retreat<br>
-				</h3>
-				<p class="text-center">
-					The Promise Retreat focuses on rejuvenating marriage relationships. This is a time where spouses can focus on one another without the distractions of everyday life.
-				</p>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-4">
-				<img src="img/lazyload-ph.png" data-src="img/corporate%20retreat-web.jpg" class="img-circle img-responsive lazyload" />
-				<h3 class="text-center mg-md">
-					Corporate Teambuilding
-				</h3>
-				<p class="text-center">
-					Day and weekend teambuilding will be offered to businesses and organizations seeking to build a stronger connection in the workplace.
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<img src="img/lazyload-ph.png" data-src="img/PastorRetreat-Web.jpg" class="img-circle img-responsive lazyload" />
-				<h3 class="text-center mg-md">
-					Pastor Retreat
-				</h3>
-				<p class="text-center">
-					The Pastor&rsquo;s Retreat is a special time where pastors and their spouses can enjoy a little pampering with minimal fuss. &nbsp;It&rsquo;s all about recharging your spiritual battery while enjoying a little solitude.
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<img src="img/lazyload-ph.png" data-src="img/facility%20rental-web.jpg" class="img-circle img-responsive lazyload" />
-				<h3 class="text-center mg-md">
-					Facility Rental
-				</h3>
-				<p class="text-center">
-					As a secondary service, Camp Refuge is available for special events such as weddings, family reunions, corporate retreats, and church conferences.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- offerings END -->
+<!-- bloc-5 END -->
 
 <!-- get-involved -->
 <div class="bloc bgc-olive-drab-7 d-bloc" id="get-involved">
@@ -429,74 +339,173 @@
 </div>
 <!-- donate END -->
 
-<!-- events -->
-<div class="bloc bgc-olive-drab-7 d-bloc" id="events">
+<!-- vision -->
+<div class="bloc bgc-olive-drab-7 d-bloc" id="vision">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="mg-md header-2-typ">
-					Events
+					Future Vision
 				</h2>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- events END -->
+<!-- vision END -->
 
-<!-- bloc-11 -->
-<div class="bloc camp-refuge-is bgc-light-gray l-bloc none" id="bloc-11">
+<!-- bloc-10 -->
+<div class="bloc bgc-white l-bloc" id="bloc-10">
+	<div class="container bloc-lg">
+		<div class="row camp-refuge-is">
+			<div class="col-sm-4">
+				<a href="#" data-lightbox="img/Chapel%20Sketch-web.jpg" data-gallery-id="gallery-1" data-frame="light-lb"><img src="img/lazyload-ph.png" data-src="img/Chapel%20Sketch-web.jpg" class="img-responsive lazyload" /></a>
+				<h3 class="mg-md">
+					pondside Chapel
+				</h3>
+				<p>
+					Our Pondside Chapel is symbolic of the Old Testament&rsquo;s Holy of Holies. The walls of glass on three sides represent the veil that was torn granting us free access to the Father. This space is meant for personal reflection, prayer, and intimate gatherings. “And so, dear brothers and sisters, we can boldly enter heaven&rsquo;s Most Holy Place because of the blood of Jesus. By his death, Jesus opened a new and life-giving way through the curtain into the Most Holy Place.” (Hebrews 10:19-20)
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<a href="#" data-lightbox="img/Retreat%20Centre%20Perspective%20B%26W-web.jpg" data-gallery-id="gallery-1" data-frame="light-lb"><img src="img/lazyload-ph.png" data-src="img/Retreat%20Centre%20Perspective%20B%26W-web.jpg" class="img-responsive lazyload" /></a>
+				<h3 class="mg-md text-center">
+					The Gathering
+				</h3>
+				<p class="text-center">
+					The Gathering at Camp Refuge is our main assembly building. Each day our retreats will start and end here. It is a multipurpose building that will not only host our times of worship and daily teachings, but also will also serve as our dining facility. There is also a screened-in-porch to enjoy a cup of coffee or a light lunch while taking in the peaceful surroundings.
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<a href="#" data-lightbox="img/Treehouse%20Boardwalk-web-mirrored.jpg" data-gallery-id="gallery-1" data-frame="light-lb"><img src="img/lazyload-ph.png" data-src="img/Treehouse%20Boardwalk-web-mirrored.jpg" class="img-responsive lazyload" /></a>
+				<h3 class="mg-md text-right">
+					treehouse cottages
+				</h3>
+				<p class="text-right">
+					Surrounding the pond there will be 12 treehouse cottages that are symbolic of the 12 tribes of Israel. &nbsp;The treehouse cabins serve as sleeping accomodations for our married couples' and pastors&rsquo; retreats. &nbsp; Each cabin is unique and is decorated according to the tribe it represents. &nbsp;The cabin features a queen sized bed, &nbsp;an intimate dining table, a full bathroom and a porch with its own swing and rocker.<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-10 END -->
+
+<!-- master-plan -->
+<div class="bloc bgc-white l-bloc" id="master-plan">
 	<div class="container bloc-lg">
 		<div class="row">
-			<div class="col-sm-6 col-sm-push-6">
-				<img src="img/lazyload-ph.png" data-src="img/5K%20banner_2019.jpg" class="img-responsive lazyload" />
+			<div class="col-sm-12">
+				<h3 class="mg-md header-3-typ text-center">
+					Proposed Master Plan
+				</h3><img src="img/lazyload-ph.png" data-src="img/Labeled%20Master%20Plan-no%20key.jpg" class="img-responsive lazyload" />
 			</div>
-			<div class="col-sm-6 col-sm-pull-6">
-				<h2 class="mg-lg">
-					annual 5K / 1-mi run
-				</h2>
-				<h3 class="mg-sm">
-					May 25, 2019
+		</div>
+		<div class="row camp-refuge-is">
+			<div class="col-sm-4">
+				<h3 class="mg-md text-center">
+					Assembly
 				</h3>
-				<p class="mg-lg">
-					Our inaugural 5K race was a huge sucess. &nbsp;This year&rsquo;s registration is now open! &nbsp; Join us for our 2nd annual &nbsp;5K/ 1-mile fun run and bring your family and friends. There will be fun activities in River Ranch town square including music, fun jump, and face painting. You don't want to miss it!!
+				<p class="text-left">
+					A - The Gathering <br>B - Pondside Chapel <br>C - Outdoor Amphitheater <br>D - Cooking Pavilion
 				</p>
-				<div class="text-center">
-					<a href="refuge-run-2019.html" class="btn btn-d btn-lg button-typ" target="_blank">More Info</a>
-				</div>
+			</div>
+			<div class="col-sm-4">
+				<h3 class="mg-md text-center">
+					Accomodation
+				</h3>
+				<p>
+					E - Treehouse Cottages <br>F - Men&rsquo;s Dormitory <br>G - Women&rsquo;s Dormitory <br>H - Bath House
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<h3 class="mg-md text-center">
+					Adventure <br>
+				</h3>
+				<p>
+					I - Riverside Boat Launch <br>J - Splash Pad <br>K - Odyssey High Ropes <br>L - Low Ropes Course
+				</p>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-11 END -->
+<!-- master-plan END -->
 
 <!-- bloc-12 -->
-<div class="bloc camp-refuge-is bgc-light-gray l-bloc" id="bloc-12">
+<div class="bloc bgc-white camp-refuge-is l-bloc" id="bloc-12">
 	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<img src="img/lazyload-ph.png" data-src="img/RusticRomanceBanner2019.jpg" class="img-responsive lazyload" />
-			</div>
-			<div class="col-sm-6">
-				<h2 class="mg-lg">
-					Husband/Wife Retreat
-				</h2>
-				<h3 class="mg-sm">
-					October 25-27, 2019, or <br>November 1-3, 2019
+		<div class="row" id="offerings">
+			<div class="col-sm-4">
+				<h3 class="mg-md header-3-typ text-center top-buffer">
+					Future <br>Camp Refuge <br>Offerings
 				</h3>
-				<p class="mg-lg">
-					Rustic outdoors meets airy romance in this weekend retreat focused on building closer relationships between husbands and wives. It&rsquo;s glamping at its finest with gourmet meals, bonfires, and times of intimate conversation without the distractions of everyday responsibilities. Topics include communication, the art of grace, and couple&rsquo;s teambuilding. To get the most out of this weekend, phones and other electronic devices should be left behind or turned off. Space is limited, so sign up today!
+			</div>
+			<div class="col-sm-4">
+				<img src="img/lazyload-ph.png" data-src="img/parent%20teen-web.jpg" class="img-circle img-responsive lazyload" />
+				<h3 class="text-center mg-md">
+					Parent/ Teen Retreat<br>
+				</h3>
+				<p class="text-center">
+					The teen years are a difficult time to genuinely connect for parents and their child. This retreat seeks to create a safe place for open and honest communication while building trust in the relationship.
 				</p>
-				<div class="text-center">
-					<a href="rustic-romance-fall-2019.html" class="btn btn-d btn-lg button-typ">More Info</a>
-				</div>
+			</div>
+			<div class="col-sm-4">
+				<img src="img/lazyload-ph.png" data-src="img/youthcamp-web.jpg" class="img-circle img-responsive lazyload" />
+				<h3 class="text-center mg-md">
+					Youth Camp
+				</h3>
+				<p class="text-center">
+					The heart behind this retreat is to establish a strong connection between youth and their Heavenly Father.&nbsp;
+				</p>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-4">
+				<img src="img/lazyload-ph.png" data-src="img/corporate%20retreat-web.jpg" class="img-circle img-responsive lazyload" />
+				<h3 class="text-center mg-md">
+					Corporate Teambuilding
+				</h3>
+				<p class="text-center">
+					Day and weekend teambuilding will be offered to businesses and organizations seeking to build a stronger connection in the workplace.
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<img src="img/lazyload-ph.png" data-src="img/PastorRetreat-Web.jpg" class="img-circle img-responsive lazyload" />
+				<h3 class="text-center mg-md">
+					Pastor Retreat
+				</h3>
+				<p class="text-center">
+					The Pastor&rsquo;s Retreat is a special time where pastors and their spouses can enjoy a little pampering with minimal fuss. &nbsp;It&rsquo;s all about recharging your spiritual battery while enjoying a little solitude.
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<img src="img/lazyload-ph.png" data-src="img/facility%20rental-web.jpg" class="img-circle img-responsive lazyload" />
+				<h3 class="text-center mg-md">
+					Facility Rental
+				</h3>
+				<p class="text-center">
+					As a secondary service, Camp Refuge is available for special events such as weddings, family reunions, corporate retreats, and church conferences.
+				</p>
 			</div>
 		</div>
 	</div>
 </div>
 <!-- bloc-12 END -->
 
+<!-- history -->
+<div class="bloc bgc-olive-drab-7 d-bloc" id="history">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="mg-md header-2-typ">
+					History
+				</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- history END -->
+
 <!-- founder-s-story -->
-<div class="bloc bgc-white l-bloc" id="founder-s-story">
+<div class="bloc bgc-white l-bloc">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
@@ -520,20 +529,6 @@
 	</div>
 </div>
 <!-- founder-s-story END -->
-
-<!-- bloc-14 -->
-<div class="bloc bgc-olive-drab-7 d-bloc" id="bloc-14">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="mg-md header-2-typ">
-					History
-				</h2>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-14 END -->
 
 <!-- bloc-15 -->
 <div class="bloc bgc-white l-bloc camp-refuge-is" id="bloc-15">
@@ -591,7 +586,7 @@
 			<div class="col-sm-3">
 				<h3 class="mg-md bloc-mob-center-text">
 					About
-				</h3><a href="camp-refuge-statement-of-beliefs.html" class="a-btn a-block bloc-mob-center-text">Statement of Beliefs</a><a href="camp-refuge-leadership.html" class="a-btn a-block bloc-mob-center-text">Leadership Team</a><a href="camp-refuge-project-status.html" class="a-btn a-block bloc-mob-center-text">Project Status</a>
+				</h3><a href="camp-refuge-statement-of-beliefs.html" class="a-btn a-block bloc-mob-center-text">Statement of Beliefs</a><a href="camp-refuge-leadership.html" class="a-btn a-block bloc-mob-center-text">Leadership Team</a><a href="index.html" class="a-btn a-block bloc-mob-center-text">Project Status</a>
 			</div>
 			<div class="col-sm-3">
 				<h3 class="mg-md bloc-mob-center-text">
