@@ -49,6 +49,25 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
+/* Group Styles */
+
+.bloc-group{
+	display:flex;
+}
+.bloc-tile-2{
+	width:50%;
+}
+.bloc-tile-3{
+	width:33.33333333%;
+}
+.bloc-tile-4{
+	width:25%;
+}
+.bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+	width:100%;
+}
+
+
 /* Background Styles */
 
 .bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
@@ -173,8 +192,11 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Bloc text custom styling */
 
-#bloc-69 p{
+#bloc-66 p{
 	font-family: Raleway;
+}
+#bloc-73 h2{
+	font-size: 44px;
 }
 
 /* = NavBar
@@ -306,6 +328,10 @@ nav .caret{
 	border-bottom-color:transparent;
 	margin: 6px -5px 0 0!important;
 	float: right;
+}
+.hero .hero-nav{
+	padding-left:inherit;
+	padding-right:inherit;
 }
 
 /* Force Mini Menu */
