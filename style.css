@@ -192,11 +192,14 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Bloc text custom styling */
 
-#bloc-66 p{
+#bloc-65 p{
 	font-family: Raleway;
 }
-#bloc-74 h2{
+#bloc-73 h2{
 	font-size: 44px;
+}
+#bloc-82 p{
+	font-family: Raleway;
 }
 
 /* = NavBar
