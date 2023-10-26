@@ -48,26 +48,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding:20px 50px;
 }
 
-/* = Full Width Blocs 
--------------------------------------------------------------- */
-
-.full-width-bloc{
-	padding-left:0;
-	padding-right:0;
-}
-.full-width-bloc .container{
-	width:100%;
-	max-width:100%!important;
-}
-.full-width-bloc .carousel img{
-	width:100%;
-	height:auto;
-}
-.full-width-bloc .navbar{
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
 
 /* Group Styles */
 
@@ -701,6 +681,10 @@ iframe{
 	margin-left:-15px;
 }
 
+.no-shadows .carousel-control.left, .no-shadows .carousel-control.right{
+	background-image: none;
+}
+
 
 /* ScrollToTop button */
 
@@ -1012,6 +996,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .transparent-background{
 	background-color:rgba(255,255,255,0.6);
+}
+.mountaindusk-hero-text-s{
+	font-size:60px;
+}
+.mountaindusk-hero-text-sub-s{
+	font-size:34px;
 }
 
 /* = Colour
